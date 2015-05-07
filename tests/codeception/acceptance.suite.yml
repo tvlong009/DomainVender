@@ -1,0 +1,130 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the Selenium-like tools.
+# powered by Mink (http://mink.behat.org).
+# (tip: that's what your customer will see).
+# (tip: test your ajax and javascript by one of Mink drivers).
+
+# RUN `build` COMMAND AFTER ADDING/REMOVING MODULES.
+
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver
+    config:
+        WebDriver:
+            url: http://crm.local/
+            browser: 'firefox'
+            restart: true
+            wait: 0.5
+            window_size: maximize
+env:
+    local-chrome:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+
+    local-firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'firefox'
+    local-ie:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'internet explorer'
+    local-phantomjs:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'phantomjs'
+                    port: 4445
+                    capabilities:
+                        webStorageEnabled: true
+    develop-chrome:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+                    url: http://develop.crm.targetmedia.eu/
+
+    develop-firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'firefox'
+                    url: http://develop.crm.targetmedia.eu/
+    develop-ie:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'internet explorer'
+                    url: http://develop.crm.targetmedia.eu/
+    develop-phantomjs:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'phantomjs'
+                    port: 4445
+                    url: http://develop.crm.targetmedia.eu/
+                    capabilities:
+                        webStorageEnabled: true
+    release-chrome:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+                    url: http://release.crm.targetmedia.eu/
+
+    release-firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'firefox'
+                    url: http://release.crm.targetmedia.eu/
+    release-ie:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'internet explorer'
+                    url: http://release.crm.targetmedia.eu/
+    release-phantomjs:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'phantomjs'
+                    port: 4445
+                    url: http://release.crm.targetmedia.eu/
+                    capabilities:
+                        webStorageEnabled: true
+
+    production-chrome:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+                    url: http://crm.targetmedia.eu/
+    production-firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'firefox'
+                    url: http://crm.targetmedia.eu/
+    production-ie:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'internet explorer'
+                    url: http://crm.targetmedia.eu/
+    production-phantomjs:
+        modules:
+            config:
+                WebDriver:
+                    browser: 'phantomjs'
+                    port: 4445
+                    url: http://crm.targetmedia.eu/
+                    capabilities:
+                        webStorageEnabled: true

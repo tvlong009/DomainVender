@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=192.168.247.87;dbname=skeleton',
+    'username' => 'deploy_admin',
+    'password' => 'git2015yii!',
+    'charset' => 'utf8',
+];

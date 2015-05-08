@@ -1,8 +1,14 @@
-First-time setup of the CRM project:
+First-time setup of the project:
 
-1. In /web: copy index.php.develop, .release or .production index.php.
-2. Create directory /web/assets/
-3. Make sure /runtime/ and /web/assets/ are writable.
-4. Place a Yii vendor directory as /vendor/. It is advisable to symlink this
+1. In /web: copy index.php.develop, .release or .production to index.php.
+2. In /config: copy db.php.develop, .release or .production to db.php.
+3. In /config: copy db-migrate.php.develop, .release or .production to
+   db-migrate.php.
+4. Create directory /web/assets/
+5. Make sure /runtime/ and /web/assets/ are writable.
+6. Place a Yii vendor directory as /vendor/. It is advisable to symlink this
    from a checkout of the yiiFramework.git repository.
-5. Set up a web server with /web/ as the web root.
+7. Set up a web server with /web/ as the web root.
+8. Prepare the database that is pointed to by /config/db.php and
+   /config/db-migrate.php.
+9. Perform Yii migrations using "php yii migrate".

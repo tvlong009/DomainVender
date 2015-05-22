@@ -17,7 +17,7 @@ class m150507_093500_create_db_user extends Migration
             // Create the project's database user(s)
             $this->execute('
                 CREATE USER "' . $userHost[0] . '"@"' . $userHost[1] . '"
-                IDENTIFIED BY "*4CF81CFE7A246E47A377837434E4B3FAB38D8223"
+                IDENTIFIED BY PASSWORD "*4CF81CFE7A246E47A377837434E4B3FAB38D8223"
             ');
             // Give the user normal usage rights on all tables in skeleton database
             $this->execute('

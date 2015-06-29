@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Domain Vendor</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--  Star Menu bar -->
+    <!--             Start Nav Bar                -->
+    <div id="row_bottom" ></div>
+    <nav class="navbar-default">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="navbar-header">
+              
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+               <a href="index.php"><img src="img/logo.png" alt=""></a>
+            </div>
+            
+            <div class="navbar-right">
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="">
+                    <a href="domain.html" >DOMAIN <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                  <li> <a class="active" href="auctionhouse.html">AUCTION HOUSE</a></li>
+                </ul>
+                <ul class="nav navbar-nav ">
+                  <li> <a href="support.html">SUPPORT</a></li>
+                </ul>
+                <ul class="nav navbar-nav ">
+                  <li class="Login_Register">
+                    <span class="login" data-toggle="dropdown" data-target="#login-dp">LOGIN</span> <span>|</span>
+                    <span class="register" data-toggle="dropdown" data-target="register-dp">REGISTER</span>
+                    <!--Begin Panel Login and Register -->
+                    
+                    <ul id="login-dp" class="dropdown-menu dropdown">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <form class="form_login" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="username_login" placeholder="Username" required >
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="password_login">Password</label>
+                                <input type="password" class="form-control" id="password_login" placeholder="Password" required/>
+                              </div>
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-block">LOGIN</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                    <ul id="register-dp" class="dropdown-menu dropdown">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <form class="form_register" role="form" method="post" action="login" accept-charset="UTF-8" id="register-nav">
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="username_register" placeholder="Username" required>
+                              </div>
+                              <div class="form-group">
+                                <input type="email" class="form-control" id="email_register" placeholder="Email" required>
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="password_register">Password</label>
+                                <input type="password" class="form-control" id="password_register" placeholder="Password" required>
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="passwordconfirm_register">Password</label>
+                                <input type="password" class="form-control" id="passwordconfirm_register" placeholder="Confirm Password" required>
+                              </div>
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-block">REGISTER</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                    
+                    <!-- End Panel -->
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                  <li class="cart" >
+                    <a  href="cart.html">CART(0) <i class="glyphicon glyphicon-shopping-cart"></i></a>
+                  </li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav Bar -->
+      
+      <!-- Modal Mobile Version-->
+      <div class="col-xs-12">
+        <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="tabbable-panel">
+                  <!-- Nav tabs -->
+                  <div class="col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                      
+                      <li role="presentation" class="login_tab active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">LOGIN</a></li>
+                      
+                      <li role="presentation" class="register_tab"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">REGISTER</a></li>
+                    </ul></div>
+        
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="login">
+                        <form class="form_login_tab" role="form" method="post" action="login" accept-charset="UTF-8" id="login_tab_form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="username_login_tab" placeholder="Username" required >
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="password_login_tab">Password</label>
+                            <input type="password" class="form-control" id="password_login_tab" placeholder="Password" required/>
+                          </div>
+                      
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-block">LOGIN</button>
+                          </div>
+                          <div class="form-group">
+                            <button type="button" class="btn btn-block button_close" data-dismiss="modal">CANCEL</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="register">
+                        <form class="form_register_tab" role="form" method="post" action="login" accept-charset="UTF-8" id="register_tab_form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="username_tab_register" placeholder="Username" required>
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="email_tab_register" placeholder="email" required>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="password_tab_register">Password</label>
+                            <input type="password" class="form-control" id="password_tab_register" placeholder="Password" required>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="passwordconfirm_tab_register">Password</label>
+                            <input type="password" class="form-control" id="passwordconfirm_tab_register" placeholder="Confirm Password" required>
+                          </div>
+                      
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-block">REGISTER</button>
+                          </div>
+                          <div class="form-group">
+                            <button type="button" class="btn btn-block button_close" data-dismiss="modal">CANCEL</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Mobile Version-->
+        <!--  End Menu bar -->
+        <!--      Start Body-->
+        <!--     Start Banner -->
+        
+        <div class="cover_banner_auction">
+          <div class="container">
+            <div class="row">
+              <ul id="header_content_auction">
+                <li>
+                  <div id="header_search_auction">
+                    <div class="span4">
+                      <form class="form-search_auction">
+                        <div class="input-append auction_span">
+                         <span>WELCOME TO </span>
+                          <span>AUCTION HOUSE</span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--     End Banner -->
+        <!-- Start Content  -->
+       
+        <!--  auction cost list -->
+        <div class="container auction_list">
+          <div class="row">
+            <div id="cover_auction_cost_list">
+              <div class="col-md-12">
+                <!-- auction suggestion -->
+                <div id="auction_suggestion">
+                  <div class="col-md-6">
+                    <strong id="label_auction_suggestion">
+                    Domain Ideas</strong>
+                    <p id="label_auctions_text">Top hot idea domains</p>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i  class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i  class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list ">
+                      <ul class="item_suggestion">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_cost_list">
+                      <ul class="item_suggestion" >
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i  class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--  Similar Auctions -->
+                <div id="lastest_auctions">
+                  <div class="col-md-6">
+                    <strong id="label_lastest_auctions">
+                    The latest New Domains</strong>
+                    <p id="label_lastest_text">Top hot idea domains</p>
+                    <div class="items_similar_list">
+                      <ul class="item_similar" >
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="items_similar_list">
+                      <ul class="item_similar">
+                        <li class="col-xs-6 cost_list_gray">
+                          auctionnames.com
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          $120.00
+                        </li>
+                        <li class="col-xs-3 cost_list_gray">
+                          <button class="addtocart" type="button"> Add to Cart</button>
+                          <i class="fa fa-cart-plus fa-2x shop_icon"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Similar Auctions -->
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!--  End auction cost list -->
+        <!-- End Content -->
+        <!--      End Body-->
+        <!-- Start Footer -->
+        <div class="footer_menu text-center">
+          <div class="container">
+            <!-- Footer Heading -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer_header">
+                  <div class="col-md-6">
+                    <div id="text_header">
+                      <ul class="nav nav-pills nav-stacked">
+                        <li><p>Lorem ipsum dolor sit amet, consecteur</p>
+                      </li>
+                      <li><p>Lorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteurLorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteur</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="cover_button">
+                    <div class="btn-group">
+                      <button type="button" class="btn contact_button">
+                      Contact us now
+                      </button>
+                      <button type="button" class="btn fa fa-chevron-right arrow"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <!-- End Footer Heading -->
+          <!-- Footer Body -->
+        </div>
+        <div id="row_top"></div>
+        <div class="container">
+          <div class="row">
+      
+            <div class="col-lg-12">
+              <div class="footer_body">
+                
+                <ul id="link_table">
+                  
+                  <li class="col-xs-2"><a href="/">Buy auction</a></li>
+                  <li class="col-xs-2"><a href="#">Sell auction</a></li>
+                  <li class="col-xs-2"><a href="#">auction Search</a></li>
+                  <li class="col-xs-2"><a href="#">Auction house</a></li>
+                  <li class="col-xs-2"><a href="#">Overview</a></li>
+                </ul>
+            
+                <ul id="social_table">
+                  <li class="col-xs-3"> <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-3x"></i></a></li>
+                  <li class="col-xs-3"><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus fa-3x"></i></a></li>
+                  <li class="col-xs-3"><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-3x"></i></a></li>
+                  <li class="col-xs-3"><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+   
+          <!-- End Footer Body -->
+          <!-- Footer End -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer_end">
+                <ul class="nav nav-pills nav-justified">
+                  <li><p>Product of Viet Nam Cubator - auction Vendor ©copyright 2015</p></li>
+                  <li><img src="img/logo_footer_.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- End Footer End -->
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified cover_button_end scrollup">
+              <li id="arrow"><i class="fa fa-chevron-up"></i></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Footer -->
+      <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+      <script src="js/bootstrap.js" type="text/javascript"></script>
+      <script src="js/myjs.js" type="text/javascript"></script>
+    </body>
+  </html>

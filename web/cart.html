@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/sumoselect.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -26,7 +27,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               </button>
-                <a href="index.php"><img src="img/logo.png" alt=""></a>
+              <a href="index.php"><img src="img/logo.png" alt=""></a>
             </div>
             
             <div class="navbar-right">
@@ -219,7 +220,7 @@
                   <div class="bs-wizard-info text-center">Payment</div>
                 </div>
                 
-                <div class="col-xs-3 bs-wizard-step "><!-- active -->
+                <div class="col-xs-3 bs-wizard-step inactive_process"><!-- active -->
                 
                 <div class="progress"><div class="progress-bar"></div></div>
                 <a data-toggle="pill" href="#done" class="bs-wizard-dot">4</a>
@@ -232,52 +233,421 @@
     </div>
   </div>
 </div>
-
 <!-- End Banner -->
 <!-- Start content -->
 <div class="cover_content_cart">
-<div class="container">
-<div class="row">
-  <div class="tab-content">
-    <div id="cart" class="tab-pane fade in active">
-      <div><p>Your Cart</p></div>
-      <div>
-        <ul class="list_products">
-          <li class="col-md-3">Products</li>
-          <li class="col-md-2">Duration</li>
-          <li class="col-md-5">Price</li>
-          <li class="col-md-2"></li>
-        </ul>
-          <ul class="list_products">
-          <li class="col-md-3">
-            <ul class="product_items">
-              <li>domainz.com</li>
-              <li>domainz.com</li>
-              <li>domainz.com</li>
-              <li>domainz.com</li>
-              <li>domainz.com</li>
+  <div class="container">
+    <div class="row">
+      <div class="tab-content cover_tab_content">
+        <div id="cart" class="tab-pane fade in active">
+          <div class="cover_your_cart">
+            <div><p class="label_gray"><b>Your Cart</b></p></div>
+            <div>
+              <ul class="list_products">
+                <li class="col-md-3 col-xs-3"><b>Products</b></li>
+                <li class="col-md-2 col-xs-2"><b>Duration</b></li>
+                <li class="col-md-5 col-xs-5"><b>Price</b></li>
+                <li class="col-md-2 col-xs-2"></li>
+              </ul>
+            </div>
+            <div class="items_cart">
+              <form action="#" method="get" accept-charset="utf-8">
+                <ul class="list_products_items">
+                  <li class="col-md-3 col-xs-3 li_gray">
+                    domainz.com
+                  </li>
+                  <li class="col-md-2 col-xs-2 li_gray">
+                    <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                      <option>2 years</option>
+                      <option>1 years</option>
+                      <option>6 months</option>
+                      <option>3 months</option>
+                      <option>2 months</option>
+                      <option>1 months</option>
+                    </select>
+                  </li>
+                  <li class="col-md-5 col-xs-5 li_gray"> $20.00</li>
+                  <li class="col-md-2 col-xs-2 li_gray">
+                    <button class="button_orange_custom active_button_orange" type="">Remove</button>
+                  </li>
+                </ul>
+              </form>
+              
+            </div>
+            <div class="items_cart">
+              <form action="#" method="get" accept-charset="utf-8">
+                <ul class="list_products_items">
+                  <li class="col-md-3 col-xs-3">
+                    
+                    domainz.com
+                    
+                  </li>
+                  <li class="col-md-2 col-xs-2">
+                    <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                      <option>2 years</option>
+                      <option>1 years</option>
+                      <option>6 months</option>
+                      <option>3 months</option>
+                      <option>2 months</option>
+                      <option>1 months</option>
+                    </select>
+                  </li>
+                  <li class="col-md-5 col-xs-5"> $20.00</li>
+                  <li class="col-md-2 col-xs-2">
+                    <button class="button_orange_custom" type="">Remove</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="items_cart">
+              <form action="#" method="get" accept-charset="utf-8">
+                <ul class="list_products_items">
+                  <li class="col-md-3 col-xs-3 li_gray">
+                    domainz.com
+                  </li>
+                  <li class="col-md-2 col-xs-2 li_gray">
+                    <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                      <option>2 years</option>
+                      <option>1 years</option>
+                      <option>6 months</option>
+                      <option>3 months</option>
+                      <option>2 months</option>
+                      <option>1 months</option>
+                    </select>
+                  </li>
+                  <li class="col-md-5 col-xs-5 li_gray"> $20.00</li>
+                  <li class="col-md-2 col-xs-2 li_gray">
+                    <button class="button_orange_custom" type="">Remove</button>
+                  </li>
+                </ul>
+              </form>
+              
+            </div>
+            <div class="items_cart">
+              <form action="#" method="get" accept-charset="utf-8">
+                <ul class="list_products_items">
+                  <li class="col-md-3 col-xs-3">
+                    
+                    domainz.com
+                    
+                  </li>
+                  <li class="col-md-2 col-xs-2">
+                    <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                      <option>2 years</option>
+                      <option>1 years</option>
+                      <option>6 months</option>
+                      <option>3 months</option>
+                      <option>2 months</option>
+                      <option>1 months</option>
+                    </select>
+                  </li>
+                  <li class="col-md-5 col-xs-5"> $20.00</li>
+                  <li class="col-md-2 col-xs-2">
+                    <button class="button_orange_custom" type="">Remove</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="items_cart">
+              <form action="#" method="get" accept-charset="utf-8">
+                <ul class="list_products_items">
+                  <li class="col-md-3 col-xs-3 li_gray">
+                    domainz.com
+                  </li>
+                  <li class="col-md-2 col-xs-2 li_gray">
+                    <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                      <option>2 years</option>
+                      <option>1 years</option>
+                      <option>6 months</option>
+                      <option>3 months</option>
+                      <option>2 months</option>
+                      <option>1 months</option>
+                    </select>
+                  </li>
+                  <li class="col-md-5 col-xs-5 li_gray"> $20.00</li>
+                  <li class="col-md-2 col-xs-2 li_gray">
+                    <button class="button_orange_custom" type="">Remove</button>
+                  </li>
+                </ul>
+              </form>
+              
+            </div>
+          </div>
+          <div class="line_under_cart_list">
+            <div><p>$71.00 (<span>Disc- $9.00</span>)</p></div>
+            <div><button type="button">PLACE ORDER</button></div>
+          </div>
+          <!-- //recommendation -->
+          <div class="cover_recommendation">
+            <div><p class="label_gray"><b>Recommendation</b></p>
+          </div>
+          <div>
+            <ul class="list_products">
+              <li class="col-md-3 col-xs-3"><b>Products</b></li>
+              <li class="col-md-2 col-xs-2"><b>Duration</b></li>
+              <li class="col-md-5 col-xs-5"><b>Price</b></li>
+              <li class="col-md-2 col-xs-2"></li>
             </ul>
-          </li>
-          <li class="col-md-2">
-             <select class="background_green_text_white select_custom">
-                <option>Mustard</option>
-                <option>Ketchup</option>
-                <option>Relish</option>
-                <option>Ok</option>
-             </select>
-          </li>
-          <li class="col-md-5">Price</li>
-          <li class="col-md-2"></li>
-        </ul>
+          </div>
+          <div class="items_cart">
+            <form action="#" method="get" accept-charset="utf-8">
+              <ul class="list_products_items">
+                <li class="col-md-3 col-xs-3 li_gray">
+                  domainz.com
+                </li>
+                <li class="col-md-2 col-xs-2 li_gray">
+                  <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                    <option>2 years</option>
+                    <option>1 years</option>
+                    <option>6 months</option>
+                    <option>3 months</option>
+                    <option>2 months</option>
+                    <option>1 months</option>
+                  </select>
+                </li>
+                <li class="col-md-5 col-xs-5 li_gray"> $20.00</li>
+                <li class="col-md-2 col-xs-2 li_gray">
+                  <button class="background_green_text_white" type="">Add to your cart</button>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+          <div class="items_cart">
+            <form action="cart_submit" method="get" accept-charset="utf-8">
+              <ul class="list_products_items">
+                <li class="col-md-3 col-xs-3">
+                  
+                  domainz.com
+                  
+                </li>
+                <li class="col-md-2 col-xs-2">
+                  <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                    <option>2 years</option>
+                    <option>1 years</option>
+                    <option>6 months</option>
+                    <option>3 months</option>
+                    <option>2 months</option>
+                    <option>1 months</option>
+                  </select>
+                </li>
+                <li class="col-md-5 col-xs-5"> $20.00</li>
+                <li class="col-md-2 col-xs-2">
+                  <button class="background_green_text_white" type="">Add to your cart</button>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+          <div class="items_cart">
+            <form action="#" method="get" accept-charset="utf-8">
+              <ul class="list_products_items">
+                <li class="col-md-3 col-xs-3 li_gray">
+                  domainz.com
+                </li>
+                <li class="col-md-2 col-xs-2 li_gray">
+                  <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                    <option>2 years</option>
+                    <option>1 years</option>
+                    <option>6 months</option>
+                    <option>3 months</option>
+                    <option>2 months</option>
+                    <option>1 months</option>
+                  </select>
+                </li>
+                <li class="col-md-5 col-xs-5 li_gray"> $20.00</li>
+                <li class="col-md-2 col-xs-2 li_gray">
+                  <button class="background_green_text_white" type="">Add to your cart</button>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+          <div class="items_cart">
+            <form action="cart_submit" method="get" accept-charset="utf-8">
+              <ul class="list_products_items">
+                <li class="col-md-3 col-xs-3">
+                  
+                  domainz.com
+                  
+                </li>
+                <li class="col-md-2 col-xs-2">
+                  <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                    <option>2 years</option>
+                    <option>1 years</option>
+                    <option>6 months</option>
+                    <option>3 months</option>
+                    <option>2 months</option>
+                    <option>1 months</option>
+                  </select>
+                </li>
+                <li class="col-md-5 col-xs-5"> $20.00</li>
+                <li class="col-md-2 col-xs-2">
+                  <button class="background_green_text_white" type="">Add to your cart</button>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+          <div class="items_cart">
+            <form action="#" method="get" accept-charset="utf-8">
+              <ul class="list_products_items">
+                <li class="col-md-3 col-xs-3 li_gray">
+                  domainz.com
+                </li>
+                <li class="col-md-2 col-xs-2 li_gray">
+                  <select name="somename" class="SlectBox" onclick="console.log($(this).val())" onchange="console.log('change is firing')">
+                    <option>2 years</option>
+                    <option>1 years</option>
+                    <option>6 months</option>
+                    <option>3 months</option>
+                    <option>2 months</option>
+                    <option>1 months</option>
+                  </select>
+                </li>
+                <li class="col-md-5 col-xs-5 li_gray"> $20.00</li>
+                <li class="col-md-2 col-xs-2 li_gray">
+                  <button class="background_green_text_white" type="">Add to your cart</button>
+                </li>
+              </ul>
+            </form>
+            
+          </div>
+        </div>
+        
       </div>
-    </div>
-    <div id="review_order" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Some content in menu 1.</p>
-    </div>
-    <div id="payment" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Some content in menu 2.</p>
+      <div id="review_order" class="tab-pane fade">
+        <h3>Review your order</h3>
+        <p>This content for review order</p>
+      </div>
+      <div id="payment" class="tab-pane fade">
+        <form class="form-horizontal" action="#" method="get" accept-charset="utf-8">
+        <div class="cover_all_form">
+          <div class="col-md-5">
+            <div class="label_gray">
+              <p><b>Your card information</b></p>
+            </div>
+            
+            <div class="form-group">
+              <label for="Country" class="col-sm-5 control-label">Country</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="country">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="paywith" class="col-sm-5 control-label">You pay with</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="paywith">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-5 control-label">Credit Card number</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="CCnumber">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="expirated_date" class="col-sm-5 control-label">Expiratoin Date</label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="expirated_month">
+              </div>
+              <div class="col-sm-1">
+                /
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="expirated_year">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="securitecode" class="col-sm-5 control-label">Security Code</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="securitecode">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="firstname" class="col-sm-5 control-label">First Name</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="firstname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="col-sm-5 control-label">Last Name</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="lastname">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <div class="label_gray">
+            <p><b>Billing Address</b></p>
+          </div>
+          <div class="form-group">
+            <label for="billaddress" class="col-sm-3 control-label">Address</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="billaddress">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="billcountry" class="col-sm-3 control-label">Country</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="billcountry">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="billcity" class="col-sm-3 control-label">City</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="billcity">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="zipcode" class="col-sm-3 control-label">Zip Code</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="zipcode">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="billphone" class="col-sm-3 control-label">Phone</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="billphone">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="billemail" class="col-sm-3 control-label">Email</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="billemail">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-12 line_under_payment">
+        <div class="col-md-6">
+        <div class="col-sm-1"><i class="fa fa-shield fa-3x"></i></div>
+        <div class="col-sm-11">
+        <label>Buyer Protection</label>
+        <div class="checkbox_protection">
+    
+          <input type="checkbox" checked="true"> <b>Full Refund</b> if you don't receive your order
+          
+        </div>
+         <div class="checkbox_protection">
+    
+          <input type="checkbox" checked="true"> <b>Refund or Keep</b> items not as described
+          
+        </div>
+        <div><a class="learn_more_protection" href="#">Learn more</a></div>
+        </div>
+          
+        </div>
+        <div class="col-md-6">
+          <div><p><b>$180.00 (<span>Disc- $20.00</span>)</b></p></div>
+            <div><button type="button">PLACE YOUR ORDERS </button></div>
+        </div>
+          
+        </div>
+      </form>
+      <br>
     </div>
     <div id="done" class="tab-pane fade">
       <h3>Menu 4</h3>
@@ -290,86 +660,92 @@
 <!-- End COntent -->
 <!-- Start Footer -->
 <div class="footer_menu text-center">
-  <div class="container">
-    <!-- Footer Heading -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="footer_header">
-          <div class="col-md-6">
-            <div id="text_header">
-              <ul class="nav nav-pills nav-stacked">
-                <li><p>Lorem ipsum dolor sit amet, consecteur</p>
-              </li>
-              <li><p>Lorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteurLorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteur</p></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div id="cover_button">
-            <div class="btn-group">
-              <button type="button" class="btn contact_button">
-              Contact us now
-              </button>
-              <button type="button" class="btn fa fa-chevron-right arrow"></button>
-            </div>
-          </div>
+<div class="container">
+<!-- Footer Heading -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="footer_header">
+      <div class="col-md-6">
+        <div id="text_header">
+          <ul class="nav nav-pills nav-stacked">
+            <li><p>Lorem ipsum dolor sit amet, consecteur</p>
+          </li>
+          <li><p>Lorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteurLorem ipsum dolor sit amet, consecteur Lorem ipsum dolor sit amet, consecteur</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="cover_button">
+        <div class="btn-group">
+          <button type="button" class="btn contact_button">
+          Contact us now
+          </button>
+          <button type="button" class="btn fa fa-chevron-right arrow"></button>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Footer Heading -->
-  <!-- Footer Body -->
+</div>
+</div>
+<!-- End Footer Heading -->
+<!-- Footer Body -->
 </div>
 <div id="row_top"></div>
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="footer_body">
-        
-        <ul id="link_table">
-          
-          <li class="col-xs-2"><a href="/">Buy auction</a></li>
-          <li class="col-xs-2"><a href="#">Sell auction</a></li>
-          <li class="col-xs-2"><a href="#">Donain Search</a></li>
-          <li class="col-xs-2"><a href="#">Auction house</a></li>
-          <li class="col-xs-2"><a href="#">Overview</a></li>
-        </ul>
-        <ul id="social_table">
-          <li class="col-xs-3"> <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-3x"></i></a></li>
-          <li class="col-xs-3"><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus fa-3x"></i></a></li>
-          <li class="col-xs-3"><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-3x"></i></a></li>
-          <li class="col-xs-3"><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-3x"></i></a></li>
-        </ul>
-      </div>
+<div class="row">
+<div class="col-lg-12">
+  <div class="footer_body">
+    
+    <ul id="link_table">
       
-    </div>
+      <li class="col-xs-2"><a href="/">Buy auction</a></li>
+      <li class="col-xs-2"><a href="#">Sell auction</a></li>
+      <li class="col-xs-2"><a href="#">Donain Search</a></li>
+      <li class="col-xs-2"><a href="#">Auction house</a></li>
+      <li class="col-xs-2"><a href="#">Overview</a></li>
+    </ul>
+    <ul id="social_table">
+      <li class="col-xs-3"> <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-3x"></i></a></li>
+      <li class="col-xs-3"><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus fa-3x"></i></a></li>
+      <li class="col-xs-3"><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-3x"></i></a></li>
+      <li class="col-xs-3"><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-3x"></i></a></li>
+    </ul>
   </div>
-  <!-- End Footer Body -->
-  <!-- Footer End -->
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="footer_end">
-        <ul class="nav nav-pills nav-justified">
-          <li><p>Product of Viet Nam Cubator - auction Vendor ©copyright 2015</p></li>
-          <li><img src="img/logo_footer_.png" alt=""></li>
-        </ul>
-      </div>
-    </div>
+  
+</div>
+</div>
+<!-- End Footer Body -->
+<!-- Footer End -->
+<div class="row">
+<div class="col-lg-12">
+  <div class="footer_end">
+    <ul class="nav nav-pills nav-justified">
+      <li><p>Product of Viet Nam Cubator - auction Vendor ©copyright 2015</p></li>
+      <li><img src="img/logo_footer_.png" alt=""></li>
+    </ul>
   </div>
-  <!-- End Footer End -->
+</div>
+</div>
+<!-- End Footer End -->
 </div>
 <div class="row">
-  <div class="col-lg-12">
-    <ul class="nav nav-pills nav-justified cover_button_end scrollup">
-      <li id="arrow"><i class="fa fa-chevron-up"></i></li>
-    </ul>
-    
-  </div>
+<div class="col-lg-12">
+<ul class="nav nav-pills nav-justified cover_button_end scrollup">
+  <li id="arrow"><i class="fa fa-chevron-up"></i></li>
+</ul>
+
+</div>
 </div>
 </div>
 <!-- End Footer -->
 <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery.sumoselect.js"></script>
 <script src="js/myjs.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+window.asd = $('.SlectBox').SumoSelect({ csvDispCount: 3 });
+});
+</script>
 </body>
 </html>
